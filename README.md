@@ -9,7 +9,7 @@
 - gcloud cli
 
 ### Architecture
-![alt architecture](documentation/terraform_gcp.jpg "Architecture")
+![alt architecture](documentation/terraform-gcp.png "Architecture")
 
 First of all, compile java application inside springapp folder:
 
