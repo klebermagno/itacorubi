@@ -1,0 +1,8 @@
+steps:
+- name: 'gcr.io/cloud-builders/git'
+  args: ['-C', 'data-collection', 'submodule', 'sync', '--recursive']
+- name: 'gcr.io/cloud-builders/git'
+  args: ['-C', 'data-collection', 'submodule', 'update', '--init', '--recursive']
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['test']
+  dir: 'data-collection'
